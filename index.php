@@ -142,12 +142,8 @@
 					<section id="images">
 						<div class="container">
 							<div class="container pt-5">
-								<h2 class="text-center mt-3 text-body-emphasis display-3">Willkommen, Soldat!</h2>
-								<p class="px-2 pt-2 pb-3 lead">The 306th Assault Brigade welcomes you to its ranks. As a soldier in our
-									unit,
-									you'll experience the thrill of tactical combat in an immersive ArmA 3 environment. Join us as we
-									emulate the professionalism and dedication of the German Bundeswehr. Prepare for intense missions,
-									camaraderie, and a rewarding milsim experience.</p>
+								<h2 class="text-center mt-3 text-body-emphasis display-3"></h2>
+								<p class="px-2 pt-2 pb-3 lead">Silentium is the premier Security Company in Red County</p>
 							</div>
 							<!-- Carousel -->
 							<div class="container h-auto mb-3" id="carousel">
