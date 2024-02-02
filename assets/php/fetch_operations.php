@@ -86,7 +86,7 @@ function send_webhook_to_discord($operations) {
 
     // Create the payload to send to Discord
     $payload = [
-        'content' => 'New operation added:',
+        'content' => 'New operation added, <@1203045365410963486>:',
         'embeds' => []
     ];
 
@@ -97,8 +97,7 @@ function send_webhook_to_discord($operations) {
                 ['name' => 'Date', 'value' => $operation['date'], 'inline' => true],
                 ['name' => 'Time', 'value' => $operation['time'], 'inline' => true],
                 ['name' => 'Location', 'value' => $operation['location']],
-                ['name' => 'Description', 'value' => $operation['description']],
-                ['name'] => 'Groups', 'value' => '<@1203045365410963486>']
+                ['name' => 'Description', 'value' => $operation['description']]
             ]
         ];
         $payload['embeds'][] = $embed;
