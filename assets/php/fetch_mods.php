@@ -1,6 +1,6 @@
 <?php
 
-require_once '/assets/php/conf.php';
+require_once 'conf.php';
 
 // Query to fetch mod data
 $sql = "SELECT * FROM modlist ORDER BY id ASC";
