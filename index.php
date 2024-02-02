@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="github.com/macinsight">
-	<title>The 306th | Your next ArmA 3 unit</title>
+	<title>Silentium Security</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link href="css/cover.css" rel="stylesheet">
@@ -124,15 +124,11 @@
 									<div class="container my-5">
 										<div class="p-5 text-center bg-body-tertiary rounded-4">
 											<p class="text-muted fs-4">Welcome to:</p>
-											<h1 class="text-body-emphasis display-4">Your next ArmA 3 unit</h1>
-											<p class="col-lg-8 mx-auto fs-5 text-muted mt-5">
-												The 306th Assault Brigade is a semi-milsim unit for ArmA 3 modeled after the german Bundeswehr.
-												We provide an
-												enjoyable and fun environment for both newbies and veterans.
-											</p>
+											<h1 class="text-body-emphasis display-4">Silentium</h1>
+											<p class="col-lg-8 mx-auto fs-5 text-muted mt-5">Flavor text goes here</p>
 											<div class="d-inline-flex gap-2 mb-5 mt-3	">
 												<a href="#images"
-													class="d-inline-flex align-items-center btn btn-success btn-lg px-4 rounded-pill">Learn
+													class="d-inline-flex align-items-center btn btn-info btn-lg px-4 rounded-pill">Learn
 													more</a>
 											</div>
 										</div>
