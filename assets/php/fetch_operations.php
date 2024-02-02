@@ -98,7 +98,7 @@ function send_webhook_to_discord($operations) {
         $embed = [
             'title' => $operation['name'],
             'fields' => [
-                ['name' => 'Date and Time', 'value' => '<t:' . $operation['time'] . ':f>', 'inline' => true] 
+                ['name' => 'Date and Time', 'value' => '<t:' . $operation['time'] . ':f>', 'inline' => true], 
                 ['name' => 'Location', 'value' => $operation['location']],
                 ['name' => 'Description', 'value' => $operation['description']],
             ]
