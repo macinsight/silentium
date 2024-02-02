@@ -14,5 +14,5 @@ jobs:
         key: ${{ secrets.SSH_AUTH_KEY_FSN1 }}
         port: 22
         script: |
-          cd /home/jh/Documents/silentium
+          cd /home/jh/silentium/www
           git pull
