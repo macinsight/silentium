@@ -15,4 +15,4 @@ jobs:
         port: 22
         script: |
           cd /home/jh/Documents/silentium
-          git pulll
+          git pull
