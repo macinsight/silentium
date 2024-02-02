@@ -11,7 +11,7 @@ jobs:
       with:
         host: fsn1.macinsight.net
         username: macinsight
-        key: ${{ secrets.DEPLOY_KEY }}
+        key: ${{ secrets.SSH_AUTH_KEY_FSN1 }}
         port: 22
         script: |
           cd /home/jh/Documents/silentium
