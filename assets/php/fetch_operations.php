@@ -113,13 +113,6 @@ function send_webhook_to_discord($operations) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     curl_close($ch);
-
-    // Check if the request was successful
-    if (!$response) {
-        echo "Error sending webhook: " . curl_error($ch);
-    } else {
-        echo "Webhook sent successfully";
-    }
 }
 ?>
 
