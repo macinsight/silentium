@@ -41,6 +41,7 @@ if ($result->num_rows > 0) {
         $time = new DateTime($row['time'], new DateTimeZone('UTC'));
         $time->setTimezone(new DateTimeZone('UTC'));
         $time_formatted = $time->format('H:i e');
+        $time_unix = $time->format('U')
         $location = $row['location'];
         $description = $row['description'];
 
@@ -48,7 +49,7 @@ if ($result->num_rows > 0) {
         $operations_for_webhook[] = [
             'name' => $operation_name,
             'date' => $date,
-            'time' => $time_formatted,
+            'time' => $time_unix,
             'location' => $location,
             'description' => $description
         ];
