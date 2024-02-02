@@ -1,28 +1,9 @@
 <?php
-require_once 'display.php';
-require_once 'config.php';
-require_once 'functions.php';
-
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-$db_host = $_ENV['DB_HOST'];
-$db_user = $_ENV['DB_USER'];
-$db_password = $_ENV['DB_PASSWORD'];
-$db_database = $_ENV['DB_DATABASE'];
-
-// Establish database connection
-$conn = new mysqli($db_host, $db_user, $db_password, $db_database);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once '../assets/php/conf.php';
 
 displayThemeSelector();
 displayHead();
 displayNavbar();
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['new_item'])) {
