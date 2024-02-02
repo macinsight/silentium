@@ -102,7 +102,7 @@ function send_webhook_to_discord($operations) {
                 ['name' => 'Time (Local)', 'value' => $local_time, 'inline' => true],
                 ['name' => 'Location', 'value' => $operation['location']],
                 ['name' => 'Description', 'value' => $operation['description']],
-                ['name' => 'Unix Timestamp', 'value' => '<' . $operation['time'] . '>', 'inline' => true] // Display Unix timestamp
+                ['name' => 'Unix Timestamp', 'value' => '<t:' . $operation['time'] . ':f>', 'inline' => true] // Display Unix timestamp
             ]
         ];
         $payload['embeds'][] = $embed;
