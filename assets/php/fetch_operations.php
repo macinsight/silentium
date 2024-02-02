@@ -19,11 +19,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Set the default timezone to CST (Central Standard Time)
-date_default_timezone_set('America/Chicago');
-
+date_default_timezone_set('Etc/UTC');
+$currentDateTime = date('Y-m-d H:i:s');
 // Query to fetch upcoming operations
-$sql = "SELECT * FROM operations ORDER BY date ASC";
+$sql = "SELECT * FROM operations WHERE  CONCAT(date, ' ', time) > '$currentDateTime' ORDER BY date ASC";
 $result = $conn->query($sql);
 
 // Generate HTML dynamically
@@ -40,8 +39,8 @@ if ($result->num_rows > 0) {
         $operation_name = $row['operation_name'];
         $date = $row['date'];
         $time = new DateTime($row['time'], new DateTimeZone('UTC'));
-        $time->setTimezone(new DateTimeZone('America/Chicago'));
-        $time_formatted = $time->format('H:i');
+        $time->setTimezone(new DateTimeZone('UTC'));
+        $time_formatted = $time->format('H:i e');
         $location = $row['location'];
         $description = $row['description'];
 
