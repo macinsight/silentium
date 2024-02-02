@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
         $link = $row['link'];
         $description = $row['description'];
         $image = $row['image'];
-        echo "<td><a href='$link'>$description</a></td>";
+        echo "<td><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href='$link'>$description</a></td>";
         echo "<td><img src='$image' alt='$description' style='max-width: 100px;'></td>";
         echo "</tr>";
     }
