@@ -1,0 +1,18 @@
+name: Remote SSH
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: fsn1.macinsight.net
+        username: macinsight
+        key: ${{ secrets.DEPLOY_KEY }}
+        port: 22
+        script: |
+          cd /home/jh/Documents/silentium
+          git pulll
