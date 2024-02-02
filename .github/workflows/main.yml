@@ -10,9 +10,9 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: fsn1.macinsight.net
-        username: macinsight
-        key: ${{ secrets.DEPLOY_KEY }}
+        username: jh
+        key: ${{ secrets.SSH_AUTH_KEY_FSN1 }}
         port: 22
         script: |
-          cd /home/jh/Documents/silentium
-          git pulll
+          cd /home/jh/silentium/www
+          git pull
