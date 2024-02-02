@@ -90,7 +90,7 @@
 		</ul>
 	</div>
 
-  <?php include 'assets/php/navbar.php'; ?>
+  <?php require('assets/php/navbar.php'); ?>
 	<!-- Cover -->
 	<div class="container d-flex flex-column w-100 min-vh-100 p-3 mx-auto text-center" id="intro">
 									<div class="container my-5">
