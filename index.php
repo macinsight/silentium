@@ -123,8 +123,9 @@
 									<div class="container my-5">
 										<div class="p-5 text-center bg-body-tertiary rounded-4">
 											<p class="text-muted fs-4">Welcome to:</p>
-											<h1 class="text-body-emphasis display-4">Silentium</h1>
-											<p class="col-lg-8 mx-auto fs-5 text-muted mt-5">Flavor text goes here</p>
+                      <h1 class="text-body-emphasis display-4">Silentium</h1>
+											<img src="assets/img/silentium-logo.png" class="d-block w-100" alt="Company Logo">
+                      <p class="col-lg-8 mx-auto fs-5 text-muted mt-5">Flavor text goes here</p>
 											<div class="d-inline-flex gap-2 mb-5 mt-3	">
 												<a href="#images"
 													class="d-inline-flex align-items-center btn btn-info btn-lg px-4 rounded-pill">Learn more</a>
