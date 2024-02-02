@@ -3,6 +3,14 @@ require_once 'display.php';
 require_once 'config.php';
 require_once 'functions.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$db_host = $_ENV['DB_HOST'T;
+$db_user = $_ENV['DB_USER'];
+$db_password = $_ENV['DB_PASSWORD'];
+$db_database = $_ENV['DB_DATABASE'];
+
 // Establish database connection
 $conn = new mysqli($db_host, $db_username, $db_password, $db_database);
 if ($conn->connect_error) {
