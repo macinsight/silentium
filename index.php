@@ -94,7 +94,7 @@
 	<div class="container sticky-top" id="navbar">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" id="navigator">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Silentium Security - A Red County Roleplay Faction</a>
+				<a class="navbar-brand" href="#">Silentium Security - A</a><img src=/assets/img/rcrp-logo.png \> Faction
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler"
 					aria-controls="navbartoggler" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -122,7 +122,7 @@
 	<div class="container d-flex flex-column w-100 min-vh-100 p-3 mx-auto text-center" id="intro">
 									<div class="container my-5">
 										<div class="p-5 text-center bg-body-tertiary rounded-4">
-											<p class="text-muted fs-4">Welcome to:</p>
+											<p class="text-muted fs-4">Welcome to</p>
 											<img src="assets/img/silentium-logo.png" class="img-fluid" alt="Company Logo">
                       <p class="col-lg-8 mx-auto fs-5 text-muted mt-5">The premier Security Agency in Red County</p>
 											<div class="d-inline-flex gap-2 mb-5 mt-3	">
