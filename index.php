@@ -94,7 +94,7 @@
 	<div class="container sticky-top" id="navbar">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" id="navigator">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Silentium Security - A</a><img src=/assets/img/rcrp-logo.png class="img-fluid w-50 h-50" \> Faction
+				<a class="navbar-brand" href="#">Silentium Security - A</a><img src=/assets/img/rcrp-logo.png class="img-fluid w-25 h-25" \> Faction
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler"
 					aria-controls="navbartoggler" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
