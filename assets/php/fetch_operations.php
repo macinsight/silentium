@@ -80,6 +80,7 @@ if ($result->num_rows > 0) {
 }
 
 // Function to send the webhook to Discord
+// Function to send the webhook to Discord
 function send_webhook_to_discord($operations) {
     // Discord webhook URL
     $webhook_url = $_ENV['DISCORD_WEBHOOK_URL'];
@@ -91,13 +92,17 @@ function send_webhook_to_discord($operations) {
     ];
 
     foreach ($operations as $operation) {
+        // Format the time to display in the user's local timezone
+        $local_time = date('Y-m-d H:i', $operation['time']);
+
         $embed = [
             'title' => $operation['name'],
             'fields' => [
                 ['name' => 'Date', 'value' => $operation['date'], 'inline' => true],
-                ['name' => 'Time', 'value' => $operation['time'], 'inline' => true],
+                ['name' => 'Time (Local)', 'value' => $local_time, 'inline' => true],
                 ['name' => 'Location', 'value' => $operation['location']],
-                ['name' => 'Description', 'value' => $operation['description']]
+                ['name' => 'Description', 'value' => $operation['description']],
+                ['name' => 'Unix Timestamp', 'value' => '<' . $operation['time'] . '>', 'inline' => true] // Display Unix timestamp
             ]
         ];
         $payload['embeds'][] = $embed;
