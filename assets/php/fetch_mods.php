@@ -30,7 +30,7 @@ $totalFileSize = 0;
 // Generate HTML dynamically
 if ($result->num_rows > 0) {
     echo '<table class="table table-hover">';
-    echo '<thead><tr><th>Mod Name</th><th>Description</th><th>Image</th></tr></thead>';
+    echo '<thead><tr><th>Mod Name</th>th>Image</th></tr></thead>';
     echo '<tbody>';
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
