@@ -128,8 +128,7 @@
 											<p class="col-lg-8 mx-auto fs-5 text-muted mt-5">Flavor text goes here</p>
 											<div class="d-inline-flex gap-2 mb-5 mt-3	">
 												<a href="#images"
-													class="d-inline-flex align-items-center btn btn-info btn-lg px-4 rounded-pill">Learn
-													more</a>
+													class="d-inline-flex align-items-center btn btn-info btn-lg px-4 rounded-pill">Learn more</a>
 											</div>
 										</div>
 									</div>
