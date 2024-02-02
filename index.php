@@ -95,7 +95,7 @@
 	<div class="container sticky-top" id="navbar">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded" id="navigator">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">306th Assault Brigade</a>
+				<a class="navbar-brand" href="#">Silentium Security - A Red County Roleplay Faction</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggler"
 					aria-controls="navbartoggler" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
