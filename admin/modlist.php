@@ -12,7 +12,7 @@ $db_password = $_ENV['DB_PASSWORD'];
 $db_database = $_ENV['DB_DATABASE'];
 
 // Establish database connection
-$conn = new mysqli($db_host, $db_username, $db_password, $db_database);
+$conn = new mysqli($db_host, $db_user, $db_password, $db_database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
