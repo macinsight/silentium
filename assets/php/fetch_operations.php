@@ -98,11 +98,9 @@ function send_webhook_to_discord($operations) {
         $embed = [
             'title' => $operation['name'],
             'fields' => [
-                ['name' => 'Date', 'value' => $operation['date'], 'inline' => true],
-                ['name' => 'Time (Local)', 'value' => $local_time, 'inline' => true],
+                ['name' => 'Date and Time', 'value' => '<t:' . $operation['time'] . ':f>', 'inline' => true] 
                 ['name' => 'Location', 'value' => $operation['location']],
                 ['name' => 'Description', 'value' => $operation['description']],
-                ['name' => 'Unix Timestamp', 'value' => '<t:' . $operation['time'] . ':f>', 'inline' => true] // Display Unix timestamp
             ]
         ];
         $payload['embeds'][] = $embed;
